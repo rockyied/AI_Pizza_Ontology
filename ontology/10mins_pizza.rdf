@@ -1,0 +1,139 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/v0cn037/ontologies/2023/6/PizzaTutorial/"
+     xml:base="http://www.semanticweb.org/v0cn037/ontologies/2023/6/PizzaTutorial/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/v0cn037/ontologies/2023/11/Pizza_in_10minutes">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10 mins pizza by rakesh</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/v0cn037/ontologies/2023/11/Pizza_in_10minutes#CheeseTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/v0cn037/ontologies/2023/11/Pizza_in_10minutes#CheeseTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/v0cn037/ontologies/2023/11/Pizza_in_10minutes#PizzaTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/v0cn037/ontologies/2023/11/Pizza_in_10minutes#DeepPanBase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/v0cn037/ontologies/2023/11/Pizza_in_10minutes#DeepPanBase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/v0cn037/ontologies/2023/11/Pizza_in_10minutes#PizzaBase"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/v0cn037/ontologies/2023/11/Pizza_in_10minutes#ThinAndCrispyBase"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/v0cn037/ontologies/2023/11/Pizza_in_10minutes#MozzarellaTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/v0cn037/ontologies/2023/11/Pizza_in_10minutes#MozzarellaTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/v0cn037/ontologies/2023/11/Pizza_in_10minutes#CheeseTopping"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/v0cn037/ontologies/2023/11/Pizza_in_10minutes#ParmesanTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/v0cn037/ontologies/2023/11/Pizza_in_10minutes#MushroomTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/v0cn037/ontologies/2023/11/Pizza_in_10minutes#MushroomTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/v0cn037/ontologies/2023/11/Pizza_in_10minutes#VegetableTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/v0cn037/ontologies/2023/11/Pizza_in_10minutes#OliveTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/v0cn037/ontologies/2023/11/Pizza_in_10minutes#OliveTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/v0cn037/ontologies/2023/11/Pizza_in_10minutes#VegetableTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/v0cn037/ontologies/2023/11/Pizza_in_10minutes#ParmesanTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/v0cn037/ontologies/2023/11/Pizza_in_10minutes#ParmesanTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/v0cn037/ontologies/2023/11/Pizza_in_10minutes#CheeseTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/v0cn037/ontologies/2023/11/Pizza_in_10minutes#Pizza -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/v0cn037/ontologies/2023/11/Pizza_in_10minutes#Pizza"/>
+    
+
+
+    <!-- http://www.semanticweb.org/v0cn037/ontologies/2023/11/Pizza_in_10minutes#PizzaBase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/v0cn037/ontologies/2023/11/Pizza_in_10minutes#PizzaBase"/>
+    
+
+
+    <!-- http://www.semanticweb.org/v0cn037/ontologies/2023/11/Pizza_in_10minutes#PizzaTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/v0cn037/ontologies/2023/11/Pizza_in_10minutes#PizzaTopping"/>
+    
+
+
+    <!-- http://www.semanticweb.org/v0cn037/ontologies/2023/11/Pizza_in_10minutes#ThinAndCrispyBase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/v0cn037/ontologies/2023/11/Pizza_in_10minutes#ThinAndCrispyBase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/v0cn037/ontologies/2023/11/Pizza_in_10minutes#PizzaBase"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/v0cn037/ontologies/2023/11/Pizza_in_10minutes#TomatoTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/v0cn037/ontologies/2023/11/Pizza_in_10minutes#TomatoTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/v0cn037/ontologies/2023/11/Pizza_in_10minutes#VegetableTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/v0cn037/ontologies/2023/11/Pizza_in_10minutes#VegetableTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/v0cn037/ontologies/2023/11/Pizza_in_10minutes#VegetableTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/v0cn037/ontologies/2023/11/Pizza_in_10minutes#PizzaTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/v0cn037/ontologies/2023/11/Pizza_in_10minutes#Pizza"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/v0cn037/ontologies/2023/11/Pizza_in_10minutes#PizzaBase"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/v0cn037/ontologies/2023/11/Pizza_in_10minutes#PizzaTopping"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
